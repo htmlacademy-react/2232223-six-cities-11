@@ -1,7 +1,7 @@
-import MainPage from "../../pages/main-page/main-page";
+import MainPage from '../../pages/main-page/main-page';
 
 type MainPageProps = {
-  CitiesNumber: number,
+  CitiesNumber: number;
 };
 
 function App({CitiesNumber}: MainPageProps): JSX.Element {
