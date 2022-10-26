@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/app/app';
+import { CITIES_NUMBER } from './mock';
 
-const Setting = {
-  CitiesNumber: 6,
-} as const;
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -12,6 +10,6 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <App CitiesNumber={Setting.CitiesNumber}/>
+    <App CitiesNumber={CITIES_NUMBER}/>
   </React.StrictMode>,
 );

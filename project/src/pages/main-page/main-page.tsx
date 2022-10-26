@@ -1,11 +1,10 @@
-import Offer from '../../components/offer/offer';
+import Offer from '../../components/offer';
 
 type MainPageProps = {
   CitiesNumber: number;
 };
 
-function MainPage({ CitiesNumber }: MainPageProps): JSX.Element {
-  return(
+const MainPage = ({ CitiesNumber }: MainPageProps): JSX.Element => (
     <div className="page page--gray page--main">
       <header className="header">
         <div className="container">
@@ -114,6 +113,5 @@ function MainPage({ CitiesNumber }: MainPageProps): JSX.Element {
       </main>
     </div>
   );
-}
 
 export default MainPage;

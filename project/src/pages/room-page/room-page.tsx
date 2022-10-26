@@ -1,6 +1,5 @@
 
-function Room(): JSX.Element {
-  return (
+const Room = (): JSX.Element => (
     <div className="page">
       <header className="header">
         <div className="container">
@@ -336,6 +335,5 @@ function Room(): JSX.Element {
     </div>
 
   );
-}
 
 export default Room;
