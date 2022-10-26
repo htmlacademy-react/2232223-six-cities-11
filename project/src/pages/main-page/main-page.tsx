@@ -1,4 +1,4 @@
-import Offer from '../../components/offer/offer';
+import Offer from '../../components/offer';
 
 type MainPageProps = {
   CitiesNumber: number;
