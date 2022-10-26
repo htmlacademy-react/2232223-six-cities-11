@@ -1,3 +1,3 @@
-import Offer from "./offer";
+import Offer from './offer';
 
 export default Offer;
