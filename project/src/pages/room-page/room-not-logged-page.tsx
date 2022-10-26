@@ -1,5 +1,5 @@
 
-function NotLogged(): JSX.Element {
+function NotLoggedRoom(): JSX.Element {
   return(
     <div className="page">
       <header className="header">
@@ -286,4 +286,4 @@ function NotLogged(): JSX.Element {
   );
 }
 
-export default NotLogged;
+export default NotLoggedRoom;
