@@ -11,7 +11,7 @@ function MainPage({ CitiesNumber }: MainPageProps): JSX.Element {
         <div className="container">
           <div className="header__wrapper">
             <div className="header__left">
-              <a className="header__logo-link header__logo-link--active">
+              <a className="header__logo-link header__logo-link--active" href="#todo">
                 <img className="header__logo" src="img/logo.svg" alt="6 cities logo" width="81" height="41" />
               </a>
             </div>
@@ -57,7 +57,7 @@ function MainPage({ CitiesNumber }: MainPageProps): JSX.Element {
                 </a>
               </li>
               <li className="locations__item">
-                <a className="locations__item-link tabs__item tabs__item--active">
+                <a className="locations__item-link tabs__item tabs__item--active" href="#todo">
                   <span>Amsterdam</span>
                 </a>
               </li>

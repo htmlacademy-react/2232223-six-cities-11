@@ -4,7 +4,7 @@ import { Fragment } from 'react';
 function NotFound(): JSX.Element {
   return (
     <Fragment>
-      <img src='img/404.png' height='580' width='720' />
+      <img src='img/404.png' height='580' width='720' alt="Page not found" />
       <Link to='/'>Go to Main page</Link>
     </Fragment>
   );

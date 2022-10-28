@@ -3,9 +3,9 @@ import Favorites from '../../pages/favorites-page';
 import Login from '../../pages/login-page';
 import Room from '../../pages/room-page';
 import NotFound from '../../pages/404-page';
-import { AppRoutes, AuthorisationStatus } from '../routes/const-routes';
+import { AppRoutes, AuthorisationStatus } from '../../mocks/consts';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import PrivateRoute from '../routes/private-route';
+import PrivateRoute from '../private-route';
 
 
 type MainPageProps = {
@@ -16,13 +16,13 @@ function App({ CitiesNumber }: MainPageProps): JSX.Element {
   return (
     <BrowserRouter>
       <Routes>
-        <MainPage CitiesNumber={CitiesNumber} />
+        <Route path={AppRoutes.Main} element={<MainPage CitiesNumber={CitiesNumber} />} />
         <Route path={AppRoutes.Login} element={<Login />} />
         <Route
           path={AppRoutes.Favorites}
           element={
             <PrivateRoute
-              authorisationStatus={AuthorisationStatus.NotAuth}
+              authorisationStatus={AuthorisationStatus.Auth}
             >
               <Favorites />
             </PrivateRoute>
