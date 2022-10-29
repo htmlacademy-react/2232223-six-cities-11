@@ -3,16 +3,17 @@ import Favorites from '../../pages/favorites-page';
 import Login from '../../pages/login-page';
 import Room from '../../pages/room-page';
 import NotFound from '../../pages/404-page';
-import { AppRoutes, AuthorisationStatus } from '../../mocks/consts';
+import { AppRoutes, AuthorisationStatus } from '../../consts';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PrivateRoute from '../private-route';
 
 
-type MainPageProps = {
+type AppProps = {
   CitiesNumber: number;
+  // id: number;
 };
 
-function App({ CitiesNumber }: MainPageProps): JSX.Element {
+function App({ CitiesNumber }: AppProps): JSX.Element {
   return (
     <BrowserRouter>
       <Routes>

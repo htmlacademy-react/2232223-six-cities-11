@@ -1,3 +1,5 @@
-import { CITIES_NUMBER } from './mocks';
+import { CITIES_NUMBER, ID} from './mocks';
 
-export default CITIES_NUMBER;
+export {CITIES_NUMBER, ID};
+
+
