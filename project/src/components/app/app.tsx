@@ -1,5 +1,14 @@
-function App(): JSX.Element {
-  return <p>Hello, world!</p>;
+import MainPage from '../../pages/main-page';
+
+
+type MainPageProps = {
+  CitiesNumber: number;
+};
+
+function App({ CitiesNumber }: MainPageProps): JSX.Element {
+  return (
+    <MainPage CitiesNumber={CitiesNumber} />
+  );
 }
 
 export default App;
