@@ -9,15 +9,14 @@ import PrivateRoute from '../private-route';
 
 
 type AppProps = {
-  CitiesNumber: number;
-  // id: number;
+  citiesNumber: number;
 };
 
-function App({ CitiesNumber }: AppProps): JSX.Element {
+function App({ citiesNumber }: AppProps): JSX.Element {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path={AppRoutes.Main} element={<MainPage CitiesNumber={CitiesNumber} />} />
+        <Route path={AppRoutes.Main} element={<MainPage CitiesNumber={citiesNumber} />} />
         <Route path={AppRoutes.Login} element={<Login />} />
         <Route
           path={AppRoutes.Favorites}

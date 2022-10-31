@@ -1,9 +1,6 @@
 import Logo from '../../components/logo';
 import HeaderNav from '../../components/header-nav';
 
-// type RoomProps = {
-//   id: number;
-// }
 
 const Room = () => (
   <div className="page">
